@@ -43,6 +43,16 @@ Select * From T_Client;
 Select * From T_Cinema;
 Select * From T_Reservation;
 
+/* DELETE */
+DELETE FROM T_Client;
+DELETE FROM T_Cinema;
+DELETE FROM T_Reservation;
+
+/*Update*/
+Update T_Client
+Set NomCli = "Jean"
+Where Id = 1;
+
 /* Jointures Reservations */
 Select NomCli, NomCinema, DateReservation
 From T_Reservation as Reservation
